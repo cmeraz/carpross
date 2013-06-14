@@ -87,12 +87,9 @@
 <!-- Page Tittle Container -->
 <div class="container">
 	<div class="span12">
-		<?php if ($title): ?>
-        <h1 class="page-header"><?php print $title; ?></h1>
-      <?php endif; ?>
-      <?php print render($title_prefix); ?>
-      <?php print render($title_suffix); ?>
-      <?php print $messages; ?>
+    <?php print render($title_prefix); ?>
+    <?php print render($title_suffix); ?>
+    <?php print $messages; ?>
 	</div>
 </div>
 
