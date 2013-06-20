@@ -31,6 +31,9 @@ h1.page-header{
 h2{ 
   font-size: 28px;
 }
+.featured h2{
+  font-size: 34px;
+}
 a:hover {
   text-decoration: none;
 }
@@ -93,7 +96,7 @@ header.main {
   text-shadow: none;
 }
 .navbar .nav > li > a:hover{
-  background-color: rgb(60,60,60);
+  background-color: #AA0000;
   text-shadow: none;
   color: white;
 }
@@ -101,8 +104,16 @@ header.main {
 .navbar .nav > li > a:focus{
   color: white;
 }
+.navbar .nav > li > a.active{
+  background-color: rgb(60,60,60);
+  text-shadow: none;
+  color: white;
+}
 .navbar-fixed-top.scroll{
   opacity: 0.96;
+}
+.navbar a.btn{
+  margin-top: 10px;
 }
 
 
@@ -330,7 +341,7 @@ footer.background{
   }
   .featured{
   margin-top: 0;
-  text-align: center;
+  padding-bottom: 36px;
   }
   .featured p{
     text-align: left;
