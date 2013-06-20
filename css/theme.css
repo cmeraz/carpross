@@ -13,7 +13,7 @@ body {
   background: url("../img/featured_bg.jpg") repeat scroll left top rgb(221, 220, 226);
 }
 body.fixed{
-  padding-top: 62px;
+  /*padding-top: 62px;*/
 }
 h2 i, h3 i, h4 i, h5 i, h6 i {
   padding-right: 5px;
@@ -63,6 +63,14 @@ hr {
   background: transparent url('../img/truck.jpg') bottom center fixed;
   background-size: cover;
   height: 100%;
+}
+html .not-found {
+  position: relative;
+  z-index: 1;
+  background: transparent url('../img/404.jpg') center center fixed;
+  background-size: cover;
+  height: 100%;
+  padding-bottom: 100%;
 }
 header.main {
   padding: 60px 10px 100px;
@@ -328,6 +336,7 @@ footer.background{
   }
   .showcase,
   .strip,
+  .not-found,
   footer {
     margin-left: -20px; /* Maintain elements full-width */
     margin-right: -20px;

@@ -46,7 +46,7 @@
 	   				<?php endif; ?>       
 	   				<!-- secundary Menu -->
 	   				<?php if ($secondary_nav): ?>
-	       			<?php print render($secondary_nav); ?>
+	       			<div class="pull-center"><?php print render($secondary_nav); ?></div>
 	   				<?php endif; ?> 
             <?php if (!empty($page['navigation'])): ?>
               <?php print render($page['navigation']); ?>

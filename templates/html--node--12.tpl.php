@@ -57,36 +57,7 @@
     <a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
   </div>
 
-  <?php print $page_top; ?>
-
-  <?php print $page; ?>
-
-<!-- Footer section of page -->
-<footer class="background">
-  <div class="container">
-    <div class="row">
-      <div class="span3">
-        <h4>Sitemap</h4>
-      </div>
-      <div class="span3">
-        <h4>Fotos</h4>
-      </div>
-      <div class="span3">
-        <h4>Plataforma</h4>
-      </div>
-      <div class="span3">
-        <h4>Contacto</h4>
-      </div>
-      <hr>
-    </div>
-    <div class="row">
-      <div class="span12">
-        <p>© 2013 Designed by <a href="http://twitter.com/heyallanmoreno">@heyallanmoreno</a></p>
-      </div>
-    </div>
-  </div>
-
-</footer>
+<?php print $page; ?>
 
 <script>
 
@@ -122,3 +93,6 @@
   <?php print $page_bottom; ?>
 </body>
 </html>
+
+
+
