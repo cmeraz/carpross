@@ -77,7 +77,7 @@
       <div class="span3">
         <h4>Contacto</h4>
       </div>
-      <hr>
+      <hr />
     </div>
     <div class="row">
       <div class="span12">

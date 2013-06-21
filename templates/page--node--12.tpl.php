@@ -14,6 +14,7 @@
   
         </header>
         <footer class="navbar-fixed-bottom pull-center">
+          
           <h1 class="text-center">OOPS <span>PAGINA NO ENCONTRADA!</span> </h1>
           <p class="lead text-center">Lo sentimos, la pagina que busca no se encuentra en el sistema o ha sido cambiada</p>
           <a class="btn bnt-primary btn-large pull-center" href="/" title="Volver a la pagina de inicio">
