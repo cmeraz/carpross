@@ -14,7 +14,7 @@
       </div>
     </div>
   </div>
-  <footer class="navbar-fixed-bottom">
+  <footer class="navbar-fixed-bottom 404-message">
     <div class="container">
       <div class="row">
         <div class="span12">
