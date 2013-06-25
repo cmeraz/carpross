@@ -111,7 +111,8 @@
 	</div>
 </div>
 
-<!-- Page Container -->
+<!-- Page Container Area
+==================================-->
 <div class="container">
  	<div class="row">
     <section class="span9">  
@@ -125,7 +126,8 @@
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
       
-      <!-- This is the Main Content Area -->
+      <!-- This is the Main Content Area 
+      ==================================-->
       <div class="container">
         <div style="margin-bottom: 35px">
            <h1>Soluciones en localización</h1>
@@ -141,7 +143,8 @@
         </div>
         <hr />
 
-        <!-- Columas de ventajas -->
+        <!-- Columas de ventajas 
+        ==================================-->
         <div class="container">
         <div class="row" style="margin-top:25px; margin-bottom:65px">
 
@@ -191,16 +194,43 @@
 
         </div>
         </div>
-        </div>
-        <!-- End of the Main Content -->
-
+        </div><!-- End of the Main Content -->
 
 	  <?php if ($page['sidebar_first']): ?>
       <aside class="span3" role="complementary">
   		  <?php print render($page['sidebar_first']); ?>
-      </aside>  <!-- /#sidebar-first -->
-    <?php endif; ?>    
-  </div> 
-</div>
+      </aside><!-- /#sidebar-first -->
+    <?php endif; ?>   
 
+    </section>
+  </div>   
+</div><!--end of page container-->
 
+<!--Footer section of page 
+==================================-->
+<footer class="background">
+
+  <div class="container">
+    <div class="row">
+      <div class="span3">
+        <h4>Sitemap</h4>
+      </div>
+      <div class="span3">
+        <h4>Fotos</h4>
+      </div>
+      <div class="span3">
+        <h4>Plataforma</h4>
+      </div>
+      <div class="span3">
+        <h4>Contacto</h4>
+      </div>
+      <hr />
+    </div>
+    <div class="row">
+      <div class="span12">
+        <p>© 2013 Designed by <a href="http://twitter.com/heyallanmoreno">@heyallanmoreno</a></p>
+      </div>
+    </div>
+  </div>
+
+</footer><!--end of footer-->

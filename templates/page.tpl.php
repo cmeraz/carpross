@@ -1,4 +1,5 @@
-<!-- Showcase -->
+<!-- Showcase header site 
+==================================-->
 <div class="showcase">
 	<div class="container">
  		<div class="row">
@@ -62,7 +63,8 @@
   </div>
 </div>
     
-<!-- Modal -->
+<!-- Modal windows for loggin form
+==================================-->
 <?php if (!user_is_logged_in()): ?>
   <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-header">
@@ -87,7 +89,8 @@
   </div>
 <?php endif ?>
 
-<!-- Page Tittle Container -->
+<!-- Page Tittle Container 
+==================================-->
 <div class="container">
 	<div class="span12">
     <?php print render($title_prefix); ?>
@@ -96,7 +99,8 @@
 	</div>
 </div>
 
-<!-- Page Container -->
+<!--Page Container 
+==================================-->
 <div class="container">
  	<div class="row">
     <?php if ($page['sidebar_first']): ?>
@@ -118,3 +122,32 @@
     </section>
   </div> 
 </div>
+
+<!--Footer section of page 
+==================================-->
+<footer class="background">
+
+  <div class="container">
+    <div class="row">
+      <div class="span3">
+        <h4>Sitemap</h4>
+      </div>
+      <div class="span3">
+        <h4>Fotos</h4>
+      </div>
+      <div class="span3">
+        <h4>Plataforma</h4>
+      </div>
+      <div class="span3">
+        <h4>Contacto</h4>
+      </div>
+      <hr />
+    </div>
+    <div class="row">
+      <div class="span12">
+        <p>© 2013 Designed by <a href="http://twitter.com/heyallanmoreno">@heyallanmoreno</a></p>
+      </div>
+    </div>
+  </div>
+
+</footer>
