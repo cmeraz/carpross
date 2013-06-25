@@ -42,83 +42,29 @@
  *
  * @ingroup themeable
  */
-?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
-  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php print $language->language; ?>" version="XHTML+RDFa 1.0" dir="<?php print $language->dir; ?>"<?php print $rdf_namespaces; ?>>
+?><!DOCTYPE html>
+<html lang="<?php print $language->language; ?>">
 
-<head profile="<?php print $grddl_profile; ?>">
+<head>
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
+  <meta name="viewport" content="width=device-width, inital-scale=1.0">
+
+  <!-- [if lt IE 9] >
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
   <?php print $styles; ?>
-  <?php print $scripts; ?>
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
-  <div id="skip-link">
-    <a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
-  </div>
 
   <?php print $page_top; ?>
-
   <?php print $page; ?>
-
-<!-- Footer section of page -->
-<footer class="background">
-  <div class="container">
-    <div class="row">
-      <div class="span3">
-        <h4>Sitemap</h4>
-      </div>
-      <div class="span3">
-        <h4>Fotos</h4>
-      </div>
-      <div class="span3">
-        <h4>Plataforma</h4>
-      </div>
-      <div class="span3">
-        <h4>Contacto</h4>
-      </div>
-      <hr />
-    </div>
-    <div class="row">
-      <div class="span12">
-        <p>© 2013 Designed by <a href="http://twitter.com/heyallanmoreno">@heyallanmoreno</a></p>
-      </div>
-    </div>
-  </div>
-
-</footer>
-
-<script>
-
-  $(document).ready(function(){
-
-    // fancy animation - fade out header content on page scroll
-    $(window).scroll(function() {
-      if ($(this).scrollTop() > 100) {
-        $('.js-animated').stop().animate({opacity: 0}, 800);
-      }
-      if ($(this).scrollTop() < 100) {
-        $('.js-animated').stop().animate({opacity: 1}, 500);
-      }
-
-      //Navigation bar fixed
-      if ($(this).scrollTop() > $('div.showcase').height()) {
-        $('body').addClass('fixed');
-        $('.strip').addClass('navbar-fixed-top').stop().animate({opacity: 0.95}, 800);
-        
-      }
-      if ($(this).scrollTop() < $('div.showcase').height()) {
-        $('body').removeClass('fixed');
-        $('.strip').removeClass('navbar-fixed-top').stop().animate({opacity: 1}, 500);
-      }
-
-    });
-
-    //bootstrap tooltip trigger
-    $('[rel="tooltip"]').tooltip();
-  });
-
-</script>
   <?php print $page_bottom; ?>
+
+  <!--Scripts at bottom of page
+  =============================-->
+  <?php print $scripts; ?>
+
 </body>
 </html>
