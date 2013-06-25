@@ -1,18 +1,21 @@
-<!-- Showcase -->
+<!-- Showcase header site 
+==================================-->
 <div class="showcase">
 	<div class="container">
  		<div class="row">
      	<div class="span12">
        	<header style="opacity: 1;" class="js-animated main">
 
-	        <!-- Site's Logo -->
+	        <!-- Site's Logo
+          ==================================-->
   	      <?php if ($logo): ?>
 	  	 			<a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
 	  					<img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
 	   				</a>
     			<?php endif; ?>
 	
-    			<!-- Site's Slogan -->
+    			<!-- Site's Slogan
+          ==================================-->
         	<?php if ($site_slogan): ?>
      				<p class="showcase"><?php print $site_slogan; ?></p>
    				<?php endif; ?>
@@ -24,12 +27,14 @@
   </div>
 </div>
 
-<!-- Navigation Menu Bar Strip -->
+<!-- Navigation Menu Bar Strip
+==================================-->
 <div class="strip">
 	<div class="container">
    	<div class="navbar">
    		 
- 		 <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+ 		 <!-- toggle for collapsed navbar content
+     ============================================-->
      	<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
        	<span class="icon-bar"></span>
        	<span class="icon-bar"></span>
@@ -40,22 +45,28 @@
 	 			<div class="nav-collapse">
 	   			<nav role="navigation">
 
-	   				<!-- Primary Menu -->
+	   				<!-- Primary Menu
+            ==================================-->
 	     			<?php if ($primary_nav): ?>
 	       			<?php print render($primary_nav); ?>
-	   				<?php endif; ?>       
-	   				<!-- secundary Menu -->
+	   				<?php endif; ?>  
+
+	   				<!-- secundary Menu
+            ==================================-->
 	   				<?php if ($secondary_nav): ?>
 	       			<div class="pull-center"><?php print render($secondary_nav); ?></div>
 	   				<?php endif; ?> 
+
             <?php if (!empty($page['navigation'])): ?>
               <?php print render($page['navigation']); ?>
             <?php endif; ?>  
+
 	 				</nav>
 	 			</div>
 			<?php endif; ?>
 
-      <!-- Button to trigger modal for the login form -->
+      <!-- Button to trigger modal for the login form 
+      ====================================================-->
     <?php if (!user_is_logged_in()): ?>
       <a href="#myModal" role="button" class="btn btn-primary pull-right" data-toggle="modal">Log in</a>
     <?php endif; ?>
@@ -64,7 +75,8 @@
   </div>
 </div>
     
-<!-- Modal -->
+<!-- Modal Windows for loggin form
+==================================-->
 <?php if (!user_is_logged_in()): ?>
   <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-header">
@@ -82,7 +94,8 @@
 
 
 <?php if ($page['carousel']): ?>
-  <!-- Carousel section page -->  
+  <!-- Carousel section page
+  ==================================-->
   <div class="featured">
     <div class="container">
       <div class="row">
@@ -102,7 +115,8 @@
   
 <?php endif ?>
 
-<!-- Page Tittle Container -->
+<!-- Page Tittle Container
+==================================-->
 <div class="container">
 	<div class="span12">
     <?php print render($title_prefix); ?>
@@ -146,60 +160,55 @@
         <!-- Columas de ventajas 
         ==================================-->
         <div class="container">
-        <div class="row" style="margin-top:25px; margin-bottom:65px">
-
-        <div class="span4">
-          <i class="icon-money icon-4x"></i>
-          <h2>Ahorrar en costos</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-          <p><a class="btn" href="#">Ver detalles »</a></p>
-        </div>
-
-        <div class="span4">
-          <i class="icon-map-marker icon-4x"></i>
-          <h2>Ubicar sus vehículos</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-          <p><a class="btn" href="#">Ver detalles »</a></p>
-        </div>
-
-        <div class="span4">
-          <i class="icon-dashboard icon-4x"></i>
-          <h2>Cumplir con los tiempos</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn" href="#">Ver detalles »</a></p>
-        </div>
-      </div>
-
-        <div class="row" style="margin-top:25px; margin-bottom:65px">
-          <div class="span4">
-            <i class="icon-group icon-4x"></i>
-            <h2>Control de personal</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-            <p><a class="btn" href="#">Ver detalles »</a></p>
+          <div class="row" style="margin-top:25px; margin-bottom:65px">
+            <div class="span4">
+              <i class="icon-money icon-4x"></i>
+              <h2>Ahorrar en costos</h2>
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+              <p><a class="btn" href="#">Ver detalles »</a></p>
+            </div>
+            <div class="span4">
+              <i class="icon-map-marker icon-4x"></i>
+              <h2>Ubicar sus vehículos</h2>
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+              <p><a class="btn" href="#">Ver detalles »</a></p>
+            </div>
+            <div class="span4">
+              <i class="icon-dashboard icon-4x"></i>
+              <h2>Cumplir con los tiempos</h2>
+              <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+              <p><a class="btn" href="#">Ver detalles »</a></p>
+            </div>
           </div>
-
-        <div class="span4">
-        <i class="icon-lock icon-4x"></i>
-        <h2>Asegurar su inversión</h2>
-<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-        <p><a class="btn" href="#">Ver detalles »</a></p>
-        </div>
-
-        <div class="span4">
-        <i class="icon-user icon-4x"></i>
-        <h2>Satisfacción del cliente</h2>
-<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        <p><a class="btn" href="#">Ver detalles »</a></p>
-        </div>
-
-        </div>
-        </div>
-        </div><!-- End of the Main Content -->
+          <div class="row" style="margin-top:25px; margin-bottom:65px">
+            <div class="span4">
+              <i class="icon-group icon-4x"></i>
+              <h2>Control de personal</h2>
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+              <p><a class="btn" href="#">Ver detalles »</a></p>
+            </div>
+            <div class="span4">
+              <i class="icon-lock icon-4x"></i>
+              <h2>Asegurar su inversión</h2>
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+              <p><a class="btn" href="#">Ver detalles »</a></p>
+            </div>
+            <div class="span4">
+              <i class="icon-user icon-4x"></i>
+              <h2>Satisfacción del cliente</h2>
+              <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+              <p><a class="btn" href="#">Ver detalles »</a></p>
+            </div>
+          </div>
+        </div>    
+      </div><!-- End of the Main Content -->
 
 	  <?php if ($page['sidebar_first']): ?>
+      <!-- sidebar-first
+      ==================================-->
       <aside class="span3" role="complementary">
   		  <?php print render($page['sidebar_first']); ?>
-      </aside><!-- /#sidebar-first -->
+      </aside>
     <?php endif; ?>   
 
     </section>
@@ -209,7 +218,6 @@
 <!--Footer section of page 
 ==================================-->
 <footer class="background">
-
   <div class="container">
     <div class="row">
       <div class="span3">
@@ -232,5 +240,4 @@
       </div>
     </div>
   </div>
-
 </footer><!--end of footer-->

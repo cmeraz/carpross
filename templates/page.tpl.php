@@ -6,31 +6,35 @@
      	<div class="span12">
        	<header style="opacity: 1;" class="js-animated main">
 
-	        <!-- Site's Logo -->
+	        <!-- Site's Logo 
+          ==================================-->
   	      <?php if ($logo): ?>
 	  	 			<a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
 	  					<img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
 	   				</a>
     			<?php endif; ?>
 	
-    			<!-- Site's Slogan -->
+    			<!-- Site's Slogan
+          ==================================-->
         	<?php if ($site_slogan): ?>
      				<p class="showcase"><?php print $site_slogan; ?></p>
    				<?php endif; ?>
 
-     	  	<p class="description">- Solidez para el futuro de tu empresa. -</p>
+     	  	<p class="description">- Ofrecemos soluciones para el futuro de su empresa. -</p>
      		</header>
       </div>
     </div>
   </div>
 </div>
 
-<!-- Navigation Menu Bar Strip -->
+<!-- Navigation Menu Bar Strip
+==================================-->
 <div class="strip">
 	<div class="container">
    	<div class="navbar">
    		 
- 		 <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+ 		 <!-- collapsed navbar content
+     ==================================-->
      	<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
        	<span class="icon-bar"></span>
        	<span class="icon-bar"></span>
@@ -41,22 +45,29 @@
 	 			<div class="nav-collapse">
 	   			<nav role="navigation">
 
-	   				<!-- Primary Menu -->
+	   				<!-- Primary Menu 
+            ==================================-->
 	     			<?php if ($primary_nav): ?>
 	       			<?php print render($primary_nav); ?>
 	   				<?php endif; ?>       
-	   				<!-- secundary Menu -->
+
+	   				<!-- Secundary Menu 
+            ==================================-->
 	   				<?php if ($secondary_nav): ?>
 	       			<div class="pull-center"><?php print render($secondary_nav); ?></div>
 	   				<?php endif; ?> 
+
             <?php if (!empty($page['navigation'])): ?>
               <?php print render($page['navigation']); ?>
             <?php endif; ?>  
+
 	 				</nav>
 	 			</div>
 			<?php endif; ?>
 		</div>
-    <!-- Button to trigger modal for the login form -->
+
+    <!-- Button to trigger modal for the login form
+    ===============================================-->
     <?php if (!user_is_logged_in()): ?>
       <a href="#myModal" role="button" class="btn btn-primary pull-right" data-toggle="modal">Log in</a>
     <?php endif; ?>
@@ -67,17 +78,17 @@
 ==================================-->
 <?php if (!user_is_logged_in()): ?>
   <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="myModalLabel">Log In</h3>
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+      <h3 id="myModalLabel">Log In</h3>
+    </div>
+    <div class="modal-body">
+      <?php print render($page['modal']); ?>
+    </div>
+    <div class="modal-footer">
+      <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+    </div>
   </div>
-  <div class="modal-body">
-    <?php print render($page['modal']); ?>
-  </div>
-  <div class="modal-footer">
-    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-  </div>
-</div>
 <?php endif; ?>
 
 
@@ -107,7 +118,7 @@
       <aside class="span3" role="complementary">
         <?php print render($page['sidebar_first']); ?>
       </aside>  <!-- /#sidebar-first -->
-    <?php endif; ?>    
+    <?php endif; ?>
     <section class="span9">  
       <?php if ($tabs): ?>
         <?php print render($tabs); ?>
@@ -126,7 +137,6 @@
 <!--Footer section of page 
 ==================================-->
 <footer class="background">
-
   <div class="container">
     <div class="row">
       <div class="span3">
@@ -149,5 +159,4 @@
       </div>
     </div>
   </div>
-
 </footer>
