@@ -1,4 +1,4 @@
-<!-- Showcase header site 
+<!-- Showcase header site
 ==================================-->
 <div class="showcase">
 	<div class="container">
@@ -6,14 +6,14 @@
      	<div class="span12">
        	<header style="opacity: 1;" class="js-animated main">
 
-	        <!-- Site's Logo 
+	        <!-- Site's Logo
           ==================================-->
   	      <?php if ($logo): ?>
 	  	 			<a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
 	  					<img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
 	   				</a>
     			<?php endif; ?>
-	
+
     			<!-- Site's Slogan
           ==================================-->
         	<?php if ($site_slogan): ?>
@@ -32,7 +32,7 @@
 <div class="strip">
 	<div class="container">
    	<div class="navbar">
-   		 
+
  		 <!-- collapsed navbar content
      ==================================-->
      	<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -40,26 +40,26 @@
        	<span class="icon-bar"></span>
        	<span class="icon-bar"></span>
      	</a>
- 	
+
  			<?php if ($primary_nav || $secondary_nav || !empty($page['navigation'])): ?>
 	 			<div class="nav-collapse">
 	   			<nav role="navigation">
 
-	   				<!-- Primary Menu 
+	   				<!-- Primary Menu
             ==================================-->
 	     			<?php if ($primary_nav): ?>
 	       			<?php print render($primary_nav); ?>
-	   				<?php endif; ?>       
+	   				<?php endif; ?>
 
-	   				<!-- Secundary Menu 
+	   				<!-- Secundary Menu
             ==================================-->
 	   				<?php if ($secondary_nav): ?>
 	       			<div class="pull-center"><?php print render($secondary_nav); ?></div>
-	   				<?php endif; ?> 
+	   				<?php endif; ?>
 
             <?php if (!empty($page['navigation'])): ?>
               <?php print render($page['navigation']); ?>
-            <?php endif; ?>  
+            <?php endif; ?>
 
 	 				</nav>
 	 			</div>
@@ -73,7 +73,7 @@
     <?php endif; ?>
   </div>
 </div>
-    
+
 <!-- Modal windows for loggin form
 ==================================-->
 <?php if (!user_is_logged_in()): ?>
@@ -93,14 +93,14 @@
 
 
 <?php if ($page['carousel']): ?>
-  <!-- Carousel section page -->  
+  <!-- Carousel section page -->
   <div class="featured">
     <?php print render($page['carousel']); ?>
     <hr>
   </div>
 <?php endif ?>
 
-<!-- Page Tittle Container 
+<!-- Page Tittle Container
 ==================================-->
 <div class="container">
 	<div class="span12">
@@ -110,7 +110,7 @@
 	</div>
 </div>
 
-<!--Page Container 
+<!--Page Container
 ==================================-->
 <div class="container">
  	<div class="row">
@@ -119,11 +119,11 @@
         <?php print render($page['sidebar_first']); ?>
       </aside>  <!-- /#sidebar-first -->
     <?php endif; ?>
-    <section class="span9">  
+    <section class="span9">
       <?php if ($tabs): ?>
         <?php print render($tabs); ?>
       <?php endif; ?>
-      <?php if ($page['help']): ?> 
+      <?php if ($page['help']): ?>
         <div class="well"><?php print render($page['help']); ?></div>
       <?php endif; ?>
       <?php if ($action_links): ?>
@@ -131,10 +131,10 @@
       <?php endif; ?>
       <?php print render($page['content']); ?>
     </section>
-  </div> 
+  </div>
 </div>
 
-<!--Footer section of page 
+<!--Footer section of page
 ==================================-->
 <footer class="background">
   <div class="container">

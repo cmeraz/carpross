@@ -1,4 +1,4 @@
-<!-- Showcase header site 
+<!-- Showcase header site
 ==================================-->
 <div class="showcase">
 	<div class="container">
@@ -13,7 +13,7 @@
 	  					<img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
 	   				</a>
     			<?php endif; ?>
-	
+
     			<!-- Site's Slogan
           ==================================-->
         	<?php if ($site_slogan): ?>
@@ -32,7 +32,7 @@
 <div class="strip">
 	<div class="container">
    	<div class="navbar">
-   		 
+
  		 <!-- toggle for collapsed navbar content
      ============================================-->
      	<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -40,7 +40,7 @@
        	<span class="icon-bar"></span>
        	<span class="icon-bar"></span>
      	</a>
- 	
+
  			<?php if ($primary_nav || $secondary_nav || !empty($page['navigation'])): ?>
 	 			<div class="nav-collapse">
 	   			<nav role="navigation">
@@ -49,23 +49,23 @@
             ==================================-->
 	     			<?php if ($primary_nav): ?>
 	       			<?php print render($primary_nav); ?>
-	   				<?php endif; ?>  
+	   				<?php endif; ?>
 
 	   				<!-- secundary Menu
             ==================================-->
 	   				<?php if ($secondary_nav): ?>
 	       			<div class="pull-center"><?php print render($secondary_nav); ?></div>
-	   				<?php endif; ?> 
+	   				<?php endif; ?>
 
             <?php if (!empty($page['navigation'])): ?>
               <?php print render($page['navigation']); ?>
-            <?php endif; ?>  
+            <?php endif; ?>
 
 	 				</nav>
 	 			</div>
 			<?php endif; ?>
 
-      <!-- Button to trigger modal for the login form 
+      <!-- Button to trigger modal for the login form
       ====================================================-->
     <?php if (!user_is_logged_in()): ?>
       <a href="#myModal" role="button" class="btn btn-primary pull-right" data-toggle="modal">Log in</a>
@@ -74,7 +74,7 @@
 		</div>
   </div>
 </div>
-    
+
 <!-- Modal Windows for loggin form
 ==================================-->
 <?php if (!user_is_logged_in()): ?>
@@ -112,7 +112,7 @@
       </div>
     </div>
   </div>
-  
+
 <?php endif ?>
 
 <!-- Page Tittle Container
@@ -129,18 +129,18 @@
 ==================================-->
 <div class="container">
  	<div class="row">
-    <section class="span9">  
+    <section class="span9">
       <?php if ($tabs): ?>
         <?php print render($tabs); ?>
       <?php endif; ?>
-      <?php if ($page['help']): ?> 
+      <?php if ($page['help']): ?>
         <div class="well"><?php print render($page['help']); ?></div>
       <?php endif; ?>
       <?php if ($action_links): ?>
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
-      
-      <!-- This is the Main Content Area 
+
+      <!-- This is the Main Content Area
       ==================================-->
       <div class="container">
         <div style="margin-bottom: 35px">
@@ -157,7 +157,7 @@
         </div>
         <hr />
 
-        <!-- Columas de ventajas 
+        <!-- Columas de ventajas
         ==================================-->
         <div class="container">
           <div class="row" style="margin-top:25px; margin-bottom:65px">
@@ -200,7 +200,7 @@
               <p><a class="btn" href="#">Ver detalles »</a></p>
             </div>
           </div>
-        </div>    
+        </div>
       </div><!-- End of the Main Content -->
 
 	  <?php if ($page['sidebar_first']): ?>
@@ -209,13 +209,13 @@
       <aside class="span3" role="complementary">
   		  <?php print render($page['sidebar_first']); ?>
       </aside>
-    <?php endif; ?>   
+    <?php endif; ?>
 
     </section>
-  </div>   
+  </div>
 </div><!--end of page container-->
 
-<!--Footer section of page 
+<!--Footer section of page
 ==================================-->
 <footer class="background">
   <div class="container">
