@@ -1,27 +1,27 @@
 <!-- Showcase header site
 ==================================-->
 <div class="showcase">
-	<div class="container">
- 		<div class="row">
-     	<div class="span12">
-       	<header style="opacity: 1;" class="js-animated main">
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <header style="opacity: 1;" class="js-animated main">
 
-	        <!-- Site's Logo
+          <!-- Site's Logo
           ==================================-->
-  	      <?php if ($logo): ?>
-	  	 			<a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
-	  					<img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-	   				</a>
-    			<?php endif; ?>
+          <?php if ($logo): ?>
+            <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
+              <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+            </a>
+          <?php endif; ?>
 
-    			<!-- Site's Slogan
+          <!-- Site's Slogan
           ==================================-->
-        	<?php if ($site_slogan): ?>
-     				<p class="showcase"><?php print $site_slogan; ?></p>
-   				<?php endif; ?>
+          <?php if ($site_slogan): ?>
+            <p class="showcase"><?php print $site_slogan; ?></p>
+          <?php endif; ?>
 
-     	  	<p class="description">- Ofrecemos soluciones para el futuro de su empresa. -</p>
-     		</header>
+          <p class="description">- Ofrecemos soluciones para el futuro de su empresa. -</p>
+        </header>
       </div>
     </div>
   </div>
@@ -30,41 +30,41 @@
 <!-- Navigation Menu Bar Strip
 ==================================-->
 <div class="strip">
-	<div class="container">
-   	<div class="navbar">
+  <div class="container">
+    <div class="navbar">
 
- 		 <!-- collapsed navbar content
+     <!-- collapsed navbar content
      ==================================-->
-     	<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-       	<span class="icon-bar"></span>
-       	<span class="icon-bar"></span>
-       	<span class="icon-bar"></span>
-     	</a>
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
 
- 			<?php if ($primary_nav || $secondary_nav || !empty($page['navigation'])): ?>
-	 			<div class="nav-collapse">
-	   			<nav role="navigation">
+      <?php if ($primary_nav || $secondary_nav || !empty($page['navigation'])): ?>
+        <div class="nav-collapse">
+          <nav role="navigation">
 
-	   				<!-- Primary Menu
+            <!-- Primary Menu
             ==================================-->
-	     			<?php if ($primary_nav): ?>
-	       			<?php print render($primary_nav); ?>
-	   				<?php endif; ?>
+            <?php if ($primary_nav): ?>
+              <?php print render($primary_nav); ?>
+            <?php endif; ?>
 
-	   				<!-- Secundary Menu
+            <!-- Secundary Menu
             ==================================-->
-	   				<?php if ($secondary_nav): ?>
-	       			<div class="pull-center"><?php print render($secondary_nav); ?></div>
-	   				<?php endif; ?>
+            <?php if ($secondary_nav): ?>
+              <div class="pull-center"><?php print render($secondary_nav); ?></div>
+            <?php endif; ?>
 
             <?php if (!empty($page['navigation'])): ?>
               <?php print render($page['navigation']); ?>
             <?php endif; ?>
 
-	 				</nav>
-	 			</div>
-			<?php endif; ?>
-		</div>
+          </nav>
+        </div>
+      <?php endif; ?>
+    </div>
 
     <!-- Button to trigger modal for the login form
     ===============================================-->
@@ -103,17 +103,17 @@
 <!-- Page Tittle Container
 ==================================-->
 <div class="container">
-	<div class="span12">
+  <div class="span12">
     <?php print render($title_prefix); ?>
     <?php print render($title_suffix); ?>
     <?php print $messages; ?>
-	</div>
+  </div>
 </div>
 
 <!--Page Container
 ==================================-->
 <div class="container">
- 	<div class="row">
+  <div class="row">
     <?php if ($page['sidebar_first']): ?>
       <aside class="span3" role="complementary">
         <?php print render($page['sidebar_first']); ?>
