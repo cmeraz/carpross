@@ -158,8 +158,11 @@ footer {
   margin-top: 30px;
   margin-bottom: 0;
 }
+footer#main-footer{
+  color: white;
+}
 footer a {
-  color: #FFF;
+  color: #FF3029;
 }
 footer a:hover {
   text-decoration: none;
