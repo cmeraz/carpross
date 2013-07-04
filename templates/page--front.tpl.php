@@ -97,7 +97,7 @@
           <!-- Site's Slogan
           ==================================-->
           <?php if ($site_slogan): ?>
-            <p class="showcase"><?php print $site_slogan; ?></p>
+            <h2><?php print $site_slogan; ?></h2>
           <?php endif; ?>
 
           <p class="description">- Ofrecemos soluciones para el futuro de su empresa -</p>
@@ -141,15 +141,15 @@
               <?php print render($page['navigation']); ?>
             <?php endif; ?>
 
+            <!-- Button to trigger modal for the login form
+            ====================================================-->
+            <?php if (!user_is_logged_in()): ?>
+              <a href="#myModal" role="button" class="btn btn-primary pull-right" data-toggle="modal">Log in</a>
+            <?php endif; ?>
+
           </nav>
         </div>
       <?php endif; ?>
-
-      <!-- Button to trigger modal for the login form
-      ====================================================-->
-    <?php if (!user_is_logged_in()): ?>
-      <a href="#myModal" role="button" class="btn btn-primary pull-right" data-toggle="modal">Log in</a>
-    <?php endif; ?>
 
     </div>
   </div>
@@ -174,6 +174,7 @@
 
 
 <?php if ($page['carousel']): ?>
+
   <!-- Carousel section page
   ==================================-->
   <div class="featured">
