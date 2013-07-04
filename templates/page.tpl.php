@@ -119,7 +119,7 @@
         <?php print render($page['sidebar_first']); ?>
       </aside>  <!-- /#sidebar-first -->
     <?php endif; ?>
-    <section class="span9">
+    <section class="span12">
       <?php if ($tabs): ?>
         <?php print render($tabs); ?>
       <?php endif; ?>

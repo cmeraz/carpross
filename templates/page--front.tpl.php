@@ -224,14 +224,14 @@
       ==================================-->
       <div class="container">
         <div style="margin-bottom: 35px">
-           <h1>Soluciones en localización</h1>
+           <h1 class="page-header">Soluciones en localización</h1>
            <div class="row">
             <div class="span10">
               <p class="lead"><strong>Somos una empresa 100% Mexicana</strong> especialista en gestión y monitoreo de flotillas y vehículos particulares, contamos con mas de 1,500 clientes satisfechos al rededor de toda la república. Trabajamos para su seguridad y la de sus vehículos.</p>
               <p><em>Contáctenos para recibir más información y una demostración de nuestro sistema.</em></p>
             </div>
             <div class="span2">
-              <a class="btn btn-primary btn-large pull-right" style="padding:16px 32px">Contactar »</a>
+              <a class="btn btn-primary btn-large pull-right" style="padding:16px 32px" href="#contacto">Contactar »</a>
             </div>
           </div>
         </div>
@@ -245,19 +245,19 @@
               <i class="icon-money icon-4x"></i>
               <h2>Ahorrar en costos</h2>
               <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-              <p><a class="btn" href="#">Ver detalles »</a></p>
+              <p><a style="margin-top: 10px;" class="btn" href="#">Ver detalles »</a></p>
             </div>
             <div class="span4">
               <i class="icon-map-marker icon-4x"></i>
               <h2>Ubicar sus vehículos</h2>
               <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-              <p><a class="btn" href="#">Ver detalles »</a></p>
+              <p><a style="margin-top: 10px;" class="btn" href="#">Ver detalles »</a></p>
             </div>
             <div class="span4">
               <i class="icon-dashboard icon-4x"></i>
               <h2>Cumplir con los tiempos</h2>
-              <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-              <p><a class="btn" href="#">Ver detalles »</a></p>
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+              <p><a style="margin-top: 10px;" class="btn" href="#">Ver detalles »</a></p>
             </div>
           </div>
           <div class="row" style="margin-top:25px; margin-bottom:65px">
@@ -265,19 +265,19 @@
               <i class="icon-group icon-4x"></i>
               <h2>Control de personal</h2>
               <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-              <p><a class="btn" href="#">Ver detalles »</a></p>
+              <p><a style="margin-top: 10px;" class="btn" href="#">Ver detalles »</a></p>
             </div>
             <div class="span4">
               <i class="icon-lock icon-4x"></i>
               <h2>Asegurar su inversión</h2>
               <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-              <p><a class="btn" href="#">Ver detalles »</a></p>
+              <p><a style="margin-top: 10px;" class="btn" href="#">Ver detalles »</a></p>
             </div>
             <div class="span4">
               <i class="icon-user icon-4x"></i>
               <h2>Satisfacción del cliente</h2>
-              <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-              <p><a class="btn" href="#">Ver detalles »</a></p>
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+              <p><a style="margin-top: 10px;"class="btn" href="#">Ver detalles »</a></p>
             </div>
           </div>
         </div>
@@ -316,13 +316,19 @@
         <?php endif; ?> 
       </div>
       <div class="span3">
-        <h3>Sitemap</h3>
+        <h3>Nosotros</h3>
+        <ul class="unstyled">
+          <li><a href="empresa/#quienes-somos" title="">¿Quiénes Somos?</a></li>
+          <li><a href="empresa/#nuestro-objetivo" title="">¿Cuál es nuestro objetivo?</a></li>
+          <li><a href="empresa/#presencia" title="">¿En donde estamos presentes?</a></li>
+          <li><a href="empresa/#porque-carpross" title="">¿Porqué elegir carpross?</a></li>
+        </ul>
         <?php if ( $page['footer_second'] ): ?>
           <?php print render($page['footer_second']); ?>
         <?php endif; ?>
       </div>
       <div class="span3">
-        <h3>Stay in touch</h3>
+        <h3 id="contacto">Contacto</h3>
         <?php if ( $page['footer_third'] ): ?>
           <?php print render($page['footer_third']); ?>
         <?php endif; ?>

@@ -9,15 +9,18 @@
 \*------------------------------------*/
 
 body {
-  color: rgb(51,51,51);
+  color: #5A5A5A;
   background: url("../img/featured_bg.jpg") repeat scroll left top rgb(221, 220, 226);
+  font-size: 17px;
 }
 body.fixed{
   /*padding-top: 62px;*/
 }
+h1, h2, h3, h4, h5, h6 {
+  color: rgb(50,50,50);
+}
 h2 i, h3 i, h4 i, h5 i, h6 i {
   padding-right: 5px;
-
 }
 h1 {
   font-size: 50px;
@@ -102,6 +105,7 @@ header.main {
   padding: 20px 30px; 
   color: white;
   text-shadow: none;
+  font-size: 14px;
 }
 .navbar .nav > li > a:hover{
   background-color: #AA0000;
@@ -157,8 +161,13 @@ footer {
   padding: 30px 20px 20px;
   margin-top: 30px;
   margin-bottom: 0;
+  font-size: 14px;
 }
 footer#main-footer{
+  color: white;
+}
+footer h1, footer h2, footer h3,
+footer h4, footer h5, footer h6{
   color: white;
 }
 footer a {
