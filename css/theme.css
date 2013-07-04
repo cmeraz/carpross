@@ -31,7 +31,7 @@ h1.page-header{
   padding-top: 50px;
   font-weight: normal;
 }
-h2{ 
+h2{
   font-size: 28px;
 }
 .featured h2{
@@ -66,6 +66,9 @@ hr {
   background: transparent url('../img/truck.jpg') bottom center fixed;
   background-size: cover;
   height: 100%;
+}
+.showcase h2{
+  color: #fff;
 }
 html .not-found {
   position: relative;
@@ -344,7 +347,7 @@ footer.background{
 @media (max-width: 767px) {
 
   h1{
-    font-size: 30px;
+    font-size: 36px;
   }
   .showcase,
   .strip,
@@ -359,7 +362,11 @@ footer.background{
   background: transparent url('../img/main-mobile.jpg') center center fixed;
   background-size: cover;
   }
+  .showcase h2{
+    font-size: 38px;
+    line-height: 36px;
   }
+
   .featured{
   margin-top: 0;
   padding-bottom: 36px;
