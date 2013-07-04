@@ -354,7 +354,8 @@ footer.background{
   background-size: cover;
   }
   .showcase h2{
-    font-size: 30px;
+    font-size: 38px;
+    line-height: 36px;
   }
 
   .featured{
