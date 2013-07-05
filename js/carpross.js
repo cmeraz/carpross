@@ -12,7 +12,7 @@ $(document).ready(function(){
       //Navigation bar fixed
       if ($(this).scrollTop() > $('div.showcase').height()) {
         $('body').addClass('fixed');
-        $('.strip').addClass('navbar-fixed-top').stop().animate({opacity: 0.95}, 800);
+        $('.strip').addClass('navbar-fixed-top').stop().animate({opacity: 0.90}, 800);
         
       }
       if ($(this).scrollTop() < $('div.showcase').height()) {

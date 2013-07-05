@@ -1,35 +1,27 @@
-
-/*
-** Theme: Edge - Bootstrap Theme
-** Author: @heyallanmoreno
-*/
-
 /*------------------------------------*\
   $Global Styles
 \*------------------------------------*/
 
 body {
-  color: #5A5A5A;
-  background: url("../img/featured_bg.jpg") repeat scroll left top rgb(221, 220, 226);
+  color: #808792;
   font-size: 17px;
-}
-body.fixed{
-  /*padding-top: 62px;*/
 }
 h1, h2, h3, h4, h5, h6 {
   color: rgb(50,50,50);
+  font-weight: lighter;
 }
 h2 i, h3 i, h4 i, h5 i, h6 i {
   padding-right: 5px;
 }
 h1 {
   font-size: 50px;
+  font-weight: bolder;
   margin-top: 20px;
   line-height: 1.25;
 }
 h1.page-header{
   padding-top: 50px;
-  font-weight: normal;
+  font-weight: bolder;
 }
 h2{
   font-size: 28px;
@@ -43,7 +35,7 @@ a:hover {
 hr {
   border-top: 1px solid #DDD;
 }
-.showcase {
+.showcase, .showcase h2 {
   font-family: 'Patua One', cursive;
   font-size: 90px;
   line-height: 1.25;
@@ -67,9 +59,6 @@ hr {
   background-size: cover;
   height: 100%;
 }
-.showcase h2{
-  color: #fff;
-}
 html .not-found {
   position: relative;
   z-index: 1;
@@ -83,8 +72,9 @@ header.main {
   text-align: center;
 }
 .description {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 20px;
+/*  font-family: "Times New Roman", Times, serif;*/
+  font-size: 26px;
+  font-weight: lighter;
   margin: 0;
   line-height: 1.25;
   color: #fff;
@@ -326,8 +316,12 @@ footer.background{
 .btn-inverse:hover {
   background-color: #424242;
 }
-
-
+i{
+  color: rgb(50,50,50);
+}
+footer i{
+  color: white;
+}
 /*------------------------------------*\
   $Responsive
 \*------------------------------------*/
