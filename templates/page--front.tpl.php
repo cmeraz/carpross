@@ -305,11 +305,11 @@
         <h3>Ubicacion</h3>
         <iframe class="img-polaroid" width="98%" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msa=0&amp;msid=204073833174488463388.0004e017def557fd2af7a&amp;ie=UTF8&amp;t=m&amp;ll=28.396006,-106.858006&amp;spn=0.011326,0.012875&amp;z=15&amp;output=embed"></iframe><br />
         <address>
-          <br>
-          <strong>Oficinas de Carpross</strong><br>
+          <br />
+          <strong>Oficinas de Carpross</strong><br />
           <i class="icon-home"></i>
-            Veracuz #235, Cd. Cuauhtemoc, Chih, MX<br>
-          <i class="icon-phone-sign"></i><abbr title="Telefono"> T: </abbr> (625) 582-0062 <br>
+            Veracuz #235, Cd. Cuauhtemoc, Chih, MX<br />
+          <i class="icon-phone-sign"></i><abbr title="Telefono"> T: </abbr> (625) 582-0062 <br />
           <i class="icon-envelope"></i><abbr title="Email"> E: </abbr> <a href="mailto:#">a.meraz@carpross.com.mx</a>
         </address>
         <?php if ( $page['footer_first'] ): ?>

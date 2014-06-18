@@ -20,8 +20,8 @@ regions[footer_third]   = 'Footer Third'
 
 stylesheets[all][] = css/style.css
 stylesheets[all][] = css/css.css
-stylesheets[all][] = css/theme.css
 stylesheets[all][] = css/font-awesome.min.css
+stylesheets[all][] = css/theme.css
 
 scripts[] = js/jquery.js
 scripts[] = js/carpross.js

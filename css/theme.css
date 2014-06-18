@@ -3,11 +3,14 @@
 \*------------------------------------*/
 
 body {
-  color: #808792;
-  font-size: 17px;
+  color: rgb(51,51,51);
+  font-size: 14px;
+     -moz-box-shadow: 10px 10px 5px #888;
+  -webkit-box-shadow: 10px 10px 5px #888;
+          box-shadow: 10px 10px 5px #888;
 }
 h1, h2, h3, h4, h5, h6 {
-  color: rgb(50,50,50);
+  color: rgb(15, 15, 15);
   font-weight: lighter;
 }
 h2 i, h3 i, h4 i, h5 i, h6 i {
@@ -21,29 +24,34 @@ h1 {
 }
 h1.page-header{
   padding-top: 50px;
-  font-weight: bolder;
-}
-h2{
-  font-size: 28px;
+  font-weight: bold;
 }
 .featured h2{
-  font-size: 34px;
+  font-size: 40px;
+}
+a {
+  color: #AA0000; 
+  padding-bottom: 5px;
 }
 a:hover {
-  text-decoration: none;
+  color: #AA0000;
+  text-decoration: none; 
+  border-bottom: black dashed 1px;
 }
 hr {
-  border-top: 1px solid #DDD;
-}
+  border-top: 1px solid #DDD; }
 .showcase, .showcase h2 {
   font-family: 'Patua One', cursive;
   font-size: 90px;
   line-height: 1.25;
   color: #fff;
-  text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
+  text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5); }
+ol li, ul li{
+  line-height: 12px;
 }
-
-
+strong {
+  color: rgb(170, 0, 0);
+}
 
 
 
@@ -93,12 +101,20 @@ header.main {
 .strip .btn {
   margin-bottom: 3px;
 }
-
+.lead{
+  line-height: 24px;
+  /* font-weight: 100; */
+}
 .navbar .nav > li > a{
   padding: 20px 30px; 
   color: white;
   text-shadow: none;
   font-size: 14px;
+  -webkit-transition: all 0.8s ease;
+     -moz-transition: all 0.8s ease;
+       -o-transition: all 0.8s ease;
+          
+  transition: all 0.8s ease;
 }
 .navbar .nav > li > a:hover{
   background-color: #AA0000;
@@ -155,24 +171,29 @@ footer {
   margin-top: 30px;
   margin-bottom: 0;
   font-size: 14px;
-}
-footer#main-footer{
   color: white;
+  border-top: 1px solid gray;
 }
 footer h1, footer h2, footer h3,
 footer h4, footer h5, footer h6{
   color: white;
 }
-footer a {
-  color: #FF3029;
+footer h3{
+  font-size: 45px;
+  margin: 12px 0 35px 0;
 }
+footer a {
+  color: white;
+} 
 footer a:hover {
   text-decoration: none;
-  color: #FFF;
-  border-bottom: 1px dotted #FFF;
+  color: #0088CC;
+}
+footer li {
+  line-height: 18px;
 }
 footer.background{
-  background: #2F353E url("../img/texture.png");
+  background: transparent url('../img/truck.jpg') bottom center fixed;
 }
 
 
@@ -243,6 +264,7 @@ footer.background{
   -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
           border-radius: 3px;
+  margin: 12px 0;        
   color: #FFF;
   text-shadow: none;
   background-image: none;
@@ -271,14 +293,14 @@ footer.background{
 
 /* Themed Buttons */
 .btn {
-  background-color: #2F353E;
+  background-color: #222;
 }
 .btn:hover,
 .btn:active,
 .btn .active,
 .btn .disabled,
 .btn[disabled] {
-  background-color: #5F686F;
+  background-color: #AA0000;
 }
 .btn-primary {
   background-color: #AA0000;
@@ -322,6 +344,23 @@ i{
 footer i{
   color: white;
 }
+.nav-tabs {
+  margin: 60px 0 0 0 
+}
+.nav-tabs>li>a {
+  color: #AA0000;
+}
+.nav-tabs>li>a:hover {
+    color: white;
+    background-color: #3C3C3C;
+}
+#block-webform-client-block-14 input,
+#block-webform-client-block-14 textarea {
+  width: 100%;
+  color: #AA0000;
+  font-weight: bold;
+}
+
 /*------------------------------------*\
   $Responsive
 \*------------------------------------*/
@@ -339,7 +378,10 @@ footer i{
 }
 
 @media (max-width: 767px) {
-
+  
+  .navbar-fixed-top, .navbar-fixed-bottom {
+    position: fixed;
+  }
   h1{
     font-size: 36px;
   }
